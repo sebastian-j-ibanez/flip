@@ -3,13 +3,14 @@
 # Switch between light and dark mode themes in Ghostty and Helix. 
 
 SETTING="theme = "
+
 GHOSTTY_CONFIG=$HOME/.config/ghostty/config
 GHOSTTY_DARK="wilmersdorf"
 GHOSTTY_LIGHT="Night Owlish Light"
 
 HELIX_CONFIG=$HOME/.config/helix/config.toml
-HELIX_DARK="\"carbonfox\""
-HELIX_LIGHT="\"cyan_light\""
+HELIX_DARK="zed_onedark"
+HELIX_LIGHT="cyan_light"
 
 # Print usage.
 usage() {
@@ -51,7 +52,7 @@ esac
 
 # Change themes.
 replace_first_line "$GHOSTTY_CONFIG" "$SETTING$GHOSTTY_THEME"
-replace_first_line "$HELIX_CONFIG"  "$SETTING$HELIX_THEME"
+replace_first_line "$HELIX_CONFIG"  "$SETTING\"$HELIX_THEME\""
 
 # Launch ghostty (detached from current shell).
 nohup ghostty >/dev/null 2>&1 &
