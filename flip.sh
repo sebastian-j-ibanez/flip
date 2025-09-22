@@ -5,11 +5,11 @@
 SETTING="theme = "
 
 GHOSTTY_CONFIG=$HOME/.config/ghostty/config
-GHOSTTY_DARK="wilmersdorf"
+GHOSTTY_DARK="Dark+"
 GHOSTTY_LIGHT="Night Owlish Light"
 
 HELIX_CONFIG=$HOME/.config/helix/config.toml
-HELIX_DARK="zed_onedark"
+HELIX_DARK="dark_plus"
 HELIX_LIGHT="cyan_light"
 
 # Print usage.
